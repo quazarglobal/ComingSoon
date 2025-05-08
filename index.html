@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animated Title</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+  
+    <body>
+        <div id="preloader"></div>
+        <!----<div class="spinner">
+            Loading
+            <div class="spinner-sector spinner-sector-red"></div>
+            <div class="spinner-sector spinner-sector-blue"></div>
+            <div class="spinner-sector spinner-sector-green"></div>
+            <div class="spinner-sector spinner-sector-yellow"></div>
+        </div>---->
+        <div class="hero">
+            <div class="title">
+                <h1>COMING SOON...</h1>
+                <div class="back-text">
+                    <span>A</span>
+                    <span>-</span>
+                    <span>L</span>
+                    <span>A</span>
+                    <span>W</span>
+                    
+                </div>
+            </div>
+            <div class="sub-title">
+                <span>SOLICITORS</span>
+                
+
+            </div>
+        </div>
+        <script>
+            let spanTexts = document.getElementsByTagName("span")
+                window.onload = function(){
+                    for(spanTexts of spanTexts){
+                        spanTexts.classList.add("active")
+                    }
+
+                }
+
+
+        </script>
+
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none"
+                loader.delay(3000).fadeOut()
+            })
+
+
+
+        </script>
+
+
+
+
+
+    </body>
+</html>
