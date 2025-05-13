@@ -11,7 +11,9 @@
         <audio console autoplay loop>
             <source src="hollywoodcinematicintro.mp3">
         </audio>
-        <div id="preloader"></div>
+        
+
+        
         <!----<div class="spinner">
             Loading
             <div class="spinner-sector spinner-sector-red"></div>
@@ -35,8 +37,15 @@
             <div class="sub-title">
                 <span>SOLICITORS</span>
             </div>
+
+            <div class="container">
+            <h1><span class="auto-type"></span></h1>
+        </div>
             
         </div>
+
+        
+
         <script>
             let spanTexts = document.getElementsByTagName("span")
                 window.onload = function(){
@@ -80,7 +89,22 @@ show();*/
 
         </script>
 
+<!------Typing Text Animation-->
 
+
+    
+
+   
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Immigration", "Residential Conveyancing", "Commercial Conveyancing.", "Landlord and Tenant matters"], typeSpeed: 150, backSpeed: 150, loop: true
+    })
+
+</script>
 
 
 
